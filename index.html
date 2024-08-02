@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="responsive.css">
+    <title>PortFolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar row-after">
+        <div class="logo"><img src="Asset/logo.main-remove.png" alt="" /></div>
+        <div class="link-section">
+          <ul class="link-list">
+            <li class="li-tags"><a href="#home" class="links-tags">Home</a></li>
+            <li class="li-tags"><a href="#skills" class="links-tags">Skills</a></li>
+            <li class="li-tags"><a href="#about" class="links-tags">About</a></li>
+            <li class="li-tags"><a href="#contact" class="links-tags">Contact</a></li>
+            <li class="li-tags">
+              <a href="#projects" class="links-tags">Projects</a>
+            </li>
+          </ul>
+        </div>
+        <div class="btn-section">
+          <div class="icon-section">
+            
+            
+           <div class="icon-div"><a href="https://www.linkedin.com/in/neha-choudhary-05b54128a/"><i class="fa-brands fa-linkedin-in"></i></a></div>
+            <div class="icon-div"><a href="https://github.com/NehaChoudhary6"><i class="fa-brands fa-github"></i></a></div>
+          </div>
+          <button class="menu-btn" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+        <div id="side-nav" class="slide-menu">
+          <button class="close-btn" onclick="closeNav()">&times;</button>
+          <a href="#home" class="slide-link">Home</a>
+          <a href="#skills" class="slide-link">Skills</a>
+          <a href="#about" class="slide-link">About</a>
+          <a href="#contact" class="slide-link">Contact</a>
+          <a href="#projects" class="slide-link">Projects</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="back-ground-image row-after">
+      <div class="overlay"></div>
+    </div>
+    <div class="back-container row-after" id="home">
+      <div  class="container row-after">
+        <div id="item1" class="item2-text row-after">
+          <p  class="devloper-text">
+            Hi, I'M NEHA !<br />
+            CREATIVE
+          </p>
+          <p class="color-text"></p>
+          <p class="small-text">
+            Motivated Computer Science Engineering student
+            with a passion for technology. Detail-oriented and
+            motivated Front-End Web Developer with a
+            passion for crafting responsive, user-friendly
+            websites.
+          </p>
+
+          <Btn id="download-cv" onclick="downloadcv()"> Download-CV </Btn>
+        </div>
+        <div id="item2" class="item2-image row-after">
+          <div class="dev-image">
+            <img 
+              src="Asset/neha-Green.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="my-service-row row-after">
+        <div id="skills" class="small-heading-div">MY SKILLS</div>
+        <div class="big-heading">
+          Crafting stories through <br />
+          design and innovation
+        </div>
+      </div>
+      <div class="item-3-row row-after">
+        <div class="item-3">
+          <div class="item-3-image-box">
+            <img src="Asset/bg-removebg-preview.png" alt="" />
+          </div>
+
+          <div class="item-3Name">WEBSITE DESIGN</div>
+          <div class="item-3-description">
+            Proficient in Front-End Technologies: Demonstrated expertise in HTML, CSS, and JavaScript to 
+            create responsive and user-friendly web interfaces.
+          </div>
+        </div>
+        <div class="item-3">
+          <div class="item-3-image-box">
+            <img class="java" src="Asset/J11.jpg" alt="" />
+          </div>
+
+          <div class="item-3Name">JAVA PROGRAMMING</div>
+          <div class="item-3-description">
+            Proficient in Java Programming: Strong understanding of object-oriented programming
+             principles and design patterns using Java.
+          </div>
+        </div>
+        <div class="item-3">
+          <div class="item-3-image-box">
+            <img src="Asset/SQL-IMG1.jpg" alt="" />
+          </div>
+
+          <div class="item-3Name">SQL</div>
+          <div class="item-3-description">
+            Proficient in SQL: Strong knowledge of SQL syntax and commands for data manipulation,
+             querying, and management.
+          </div>
+        </div>
+      </div>
+
+      <div id="about" class="about-me-section">
+        <div class="about-me-textcontent">
+          <div class="ABOUT-ME-heading-div">ABOUT ME</div>
+          <div class="ABOUT-ME-big-heading">
+            Transforming visions into exceptional portfolios
+          </div>
+          <p class="ABOUT-ME-small-text">
+            As a passionate and detail-oriented Front-End Developer, I specialize in creating responsive, 
+            user-centric web applications using modern front-end technologies. With a solid foundation 
+            in HTML, CSS, and JavaScript, I have extensive experience in building dynamic and engaging
+             user interfaces. 
+          </p>
+          <Btn id="download-cv"> Download-CV </Btn>
+        </div>
+
+        <div class="about-image-section">
+          <div class="about-image">
+            <img src="Asset/nehaPurplepic.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div id="contact"class="form-section">
+        <div class="form-text-section">
+          <div class="form-heading-text">
+            <span class="form-text-design"> Design </span>
+            and Innovation
+          </div>
+          <p class="ABOUT-ME-small-text">
+            As a beginner, I am committed to continuous learning and improvement, seeking
+             opportunities to expand my skill set and take on new challenges. I am excited about
+              collaborating with experienced developers and contributing to projects where I can grow and 
+              apply my knowledge in front-end, Java and SQL.
+          </p>
+        </div>
+
+        <div class="submit-form">
+          <div class="get-touch-big-text">CONTACT ME?</div>
+          <p class="get-in-touch-text">
+            I would love to hear from you! Whether you have a question, a project opportunity, or just want to connect, feel free to reach out.
+          </p>
+          <input class="input" id="name" type="text" placeholder="Your Name" />
+          <input
+            class="input"
+            id="email"
+            type="text"
+            placeholder="Your Email"
+          />
+          <input
+            class="input"
+            id="phone"
+            type="text"
+            placeholder="Your Phone"
+          />
+          <input
+            class="input"
+            id="messege"
+            type="text"
+            placeholder="Your Messege"
+          />
+
+          <input id="submit-btn" type="Submit" />
+        </div>
+      </div>
+
+      <div class="my-projects-section">
+        <div class="project-heading">
+          <div id="projects" class="ABOUT-ME-heading-div">RECENT PROJECTS</div>
+          <div class="ABOUT-ME-big-heading">Here Are My Recent Projects</div>
+        </div>
+
+        <div class="projects-row">
+          <div class="item-3">
+            <div class="item-3-image-box">
+              <img src="Asset/WhatsApp Image 2024-08-02 at 11.50.10_40c836f8.jpg" alt="" />
+            </div>
+            <div class="Webpage-name">COMPETE NATION</div>
+            <div class="item-3-description">
+              This web page is made using HTML and CSS, this is my ESD group project, my task was to develop the design of the whole website.To See the
+              full webpage Click on the Button
+            </div>
+            <a class="view" href="https://nehachoudhary6.github.io/compete-nation-esd/">View</a>
+          </div>
+
+          <div class="item-3">
+            <div class="item-3-image-box">
+              <img src="Asset/WhatsApp Image 2024-08-02 at 11.49.46_da98a470.jpg" alt="" />
+            </div>
+            <div class="Webpage-name">THEME COMPANY</div>
+            <div class="item-3-description">
+              I created this design during my learning phase, the design includes a clean and professional layout.To See the full
+              webpage Click on the Button Which is given Below
+            </div>
+            <a class="view" href="https://nehachoudhary6.github.io/css-theme/#">View</a>
+          </div>
+
+          <div class="item-3">
+            <div class="item-3-image-box">
+              <img src="Asset/WhatsApp Image 2024-08-02 at 11.49.23_4a996d42.jpg" alt="" />
+            </div>
+            <div class="Webpage-name">TRAVEL & TOURISM</div>
+            <div class="item-3-description">
+              this is my web technology group project ,My responsibility for this project is -1.Creating navigation bar area and footer.
+               2.Things to Do page is also created by me.
+            </div>
+            <a class="view" href="https://nehachoudhary6.github.io/html-Travel-Tourism/">View</a>
+          </div>
+
+          <div class="item-3">
+            <div class="item-3-image-box">
+              <img src="Asset/WhatsApp Image 2024-08-02 at 12.22.56_54a7c9e1.jpg" alt="" />
+            </div>
+            <div class="Webpage-name">PORTFOLIO</div>
+            <div class="item-3-description">
+              This WebPage is made by HTML CSS & JS And Its my Recent Project
+              This Project Is Based on Portfolio Website.To See the full webpage
+              Click on the Button Which is given Below.
+            </div>
+            <a class="view" href="">View</a>
+          </div>
+
+          <div class="item-3">
+            <div class="item-3-image-box">
+              <img src="Asset/WhatsApp Image 2024-08-02 at 11.49.01_156197d2.jpg" alt="" />
+            </div>
+            <div class="Webpage-name">DICE GAME</div>
+            <div class="item-3-description">
+              This WebPage is made by HTML CSS & JS And It has simple design, all you have to do is refresh the
+               page and the highest number will be the winner.
+               Click on the Button Which is given Below.
+            </div>
+            <a class="view" href="https://nehachoudhary6.github.io/diceGame/">View</a>
+          </div>
+
+          <div class="item-3">
+            <div class="item-3-image-box">
+              <img src="Asset/WhatsApp Image 2024-08-02 at 11.47.41_03c3318d.jpg" alt="" />
+            </div>
+            <div class="Webpage-name">DRUM KIT</div>
+            <div class="item-3-description">
+              This WebPage is made by HTML CSS & JS And This is just a simple drum kit. Each button will play a 
+              different sound.To See the full webpage
+              Click on the Button Which is given Below.
+            </div>
+            <a class="view" href="https://nehachoudhary6.github.io/Drum_Kit/">View</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="Email-row">
+        <div class="new-settler-text">NOTIFY ME </div>
+        <div class="email">
+          <input
+            class="email-input"
+            id="email"
+            type="text"
+            placeholder="Your Email"
+          />
+          <button class="notify-me">Notify Now</button>
+        </div>
+      </div>
+      <footer>
+        <div class="footer">
+          <div class="footer-item3">
+            <div class="footer-logo">
+              <i class="fa-solid fa-map-pin"></i>
+            </div>
+  
+            <div class="footer-address">
+              <h2>Address</h2>
+              Techno India University, sector 5
+            </div>
+          </div>
+
+          <div class="footer-item3">
+            <div class="footer-logo">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+  
+            <div class="footer-address">
+              <h2>Lets Talk Us</h2>
+              123-456-7890
+            </div>
+          </div>
+
+          <div class="footer-item3">
+            <div class="footer-logo">
+              <i class="fa-regular fa-envelope"></i>
+            </div>
+  
+            <div class="footer-address">
+              <h2>Send -Email</h2>
+              nehachoudharyp11@gmail.com
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
